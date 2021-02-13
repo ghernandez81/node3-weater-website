@@ -1,4 +1,4 @@
-console.log('Client side javascript file is loaded!');
+
 
 const getWeather = (location, p1, p2) => {
   p1.textContent = 'loading ...';
