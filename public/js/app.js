@@ -3,7 +3,7 @@
 const getWeather = (location, p1, p2) => {
   p1.textContent = 'loading ...';
   p2.textContent = '';
-  fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
+  fetch(`/weather?address=${location}`).then((response) => {
     response.json().then((data) => {
       p1.textContent = '';
       if (data.error) {
